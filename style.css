@@ -198,7 +198,7 @@ a{
 .coeur:hover{
     transition: 0.8s;
     opacity: 0;
-    color: white;
+    
     
 }
 
@@ -207,9 +207,28 @@ a{
     font-size: 30px;
     position: absolute;
     right: 45px;
-    opacity: -1;
-    color:tomato ;
+    background: linear-gradient(0deg, #9356DC 0%, #ff79DA 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
 }
+.coeur3{
+    cursor: pointer;
+    font-size: 27px;
+    position: absolute;
+    right: 44px;
+    top: 0px;
+    opacity: -1;
+    background: linear-gradient(0deg, #9356DC 0%, #ff79DA 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+.coeur3:hover{
+    transition: 0.8s;
+    opacity: 1;
+}
+
 .coeur2:hover{
     transition:  0.8s;
     opacity: 1;
@@ -234,26 +253,42 @@ a{
         100% {opacity: 1; }
 }
 /*#99E2D0*/
-/* .anime{
+.anime{
     position: absolute;
-    border:10px solid #f3f3f3;
-    border-top:10px solid #9356DC ;
-    border-bottom:10px solid #9356DC ;
-    border-left:10px solid #FF79DA ;
-    border-right:10px solid #FF79DA ;
-    width: 100px;
-    height: 100px;
+    border:30px solid #f3f3f3;
+    border-top:30px solid #9356DC ;
+    border-bottom:30px solid #9356DC ;
+    border-left:30px solid #FF79DA ;
+    border-right:30px solid #FF79DA ;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: auto;
     top: 0; right: 0; bottom: 0; left: 0;
-    animation: spin 1.5s linear infinite;
-    
-    z-index: 9999;
-    background-color: white;
+    animation: spin 4s linear ;
+    opacity: 0;
+    z-index: 2;
+    background-color: transparent;
 }
 @keyframes spin{
-    0%{ transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    0%{ transform: rotate(0deg); opacity: 1;}
+    100%{transform: rotate(360deg); opacity: 0;}
+}
+.pati{
+    position: absolute;
+    color: #99E2D0;
+    font-size: 45px;
+    margin: auto;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 500;
+    width:  230px;
+    height:60px;
+    opacity: 0;
+    animation: tourne 4s linear ;
+}
+@keyframes tourne {
+    0%{ transform: rotate(0); opacity: 1;}
+    100%{transform: rotate(-380deg); opacity: 0;}
 }
 /*#9356DC #FF79DA*/ 
 
@@ -333,6 +368,8 @@ a{
     
 
 }
+
+
 @keyframes apparai{
     from {
         margin-top: 100%;
@@ -352,7 +389,9 @@ a{
 .small-bloc .roule:hover{
     visibility: visible;
     transform: translateX(-100%);
-    transition: all .5s ease-in;
+    /* transition: transform .8s cubic-bezier(0.250, 0.460, 0.450, 0.940); */
+    transition: transform .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    /* right: 50%; */
 }
 .roule{
     display: flex;
@@ -364,17 +403,18 @@ a{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
-    padding: 20px;
     right: -50px;
     top: 0;
     opacity: 1;
-    transition: transform 330ms ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
 .argument{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .marge{
     margin: 5px;
@@ -408,4 +448,61 @@ a{
 }
 .titi{
     font-size: 25px;
+}
+@media screen and (min-width: 1199px){
+    .boutons{
+        flex-direction: row;
+    }
+    .bouton{
+        width: 20%;
+        margin-right: 97px;
+    }
+    .titre-fonction{
+        display: flex;
+        justify-content: center;
+    }
+    .titre2{
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        width: 82%;
+        margin-left: 9%;
+        border-top-left-radius: 265px;
+        border-top-right-radius: 265px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+    }
+    .box-image{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .image{
+        width: 50%;
+    }
+    .footer-end{
+        margin-left: 10%;
+    }
+    .small-bloc{
+        width: 30%;
+    }
+    .blocpleinmenu{
+        display: flex;
+        justify-content: center;
+    }
+    .portion{
+        width: 30%;
+    }
+    .small-bloc{
+        width: 95%;
+    }
+    .bloc-plein{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .titre-resto{
+        margin-left: 54px;
+    }
 }
