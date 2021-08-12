@@ -65,7 +65,7 @@ h1{
     transition-duration: .4s;   
 }
 .btn:hover{
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 .fonctionnement{
     font-size: 18px;
@@ -461,6 +461,12 @@ a{
     border: 0;
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     font-size: 18px;
+    transition-property: transform;
+    transition-duration: .3s;   
+}
+.btn1:hover{
+    transform: scale(0.95);
+    transition: .1;
 }
 .commande{
     display: flex;
