@@ -192,6 +192,7 @@ a{
     right: 25px;
     opacity: 1;
     color: black;
+    transition: 0.3;
 
 }
 
@@ -287,8 +288,10 @@ a{
     animation: tourne 4s linear ;
 }
 @keyframes tourne {
-    0%{ transform: rotate(0); opacity: 1;}
-    100%{transform: rotate(-380deg); opacity: 0;}
+    0%{  opacity: 1;}
+    25%{ opacity: 0.7;}
+    50%{opacity: 1;}
+    100%{ opacity: 0;}
 }
 /*#9356DC #FF79DA*/ 
 
@@ -306,7 +309,7 @@ a{
 }
 .fa-arrow-left{
     display: block;
-    color: gray;
+    color: black;
     margin-left: 25px;
     font-size: 25px;
 }
