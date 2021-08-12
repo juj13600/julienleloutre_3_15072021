@@ -366,7 +366,10 @@ a{
     margin: 10px 1px 12px 14px;
     animation: apparai 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
-
+}
+.small-bloc:hover .roule{
+    margin-right: 50px;
+    transition: 0.8s;
 }
 
 
@@ -386,13 +389,7 @@ a{
 }
 
 
-.small-bloc .roule:hover{
-    visibility: visible;
-    transform: translateX(-100%);
-    /* transition: transform .8s cubic-bezier(0.250, 0.460, 0.450, 0.940); */
-    transition: transform .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    /* right: 50%; */
-}
+
 .roule{
     display: flex;
     justify-content: center;
@@ -400,13 +397,13 @@ a{
     background-color: #99E2D0;
     width: 50px;
     height: 67px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: absolute;
     right: -50px;
     top: 0;
     opacity: 1;
-    transition: transform .5s ease-in-out;
+    transition: .8s;
 }
 
 .argument{
@@ -418,16 +415,38 @@ a{
 }
 .marge{
     margin: 5px;
+    transition: 0.8s;
 }
-.marge:hover{
-    margin-right: 25%;
-    transition: 1s;
+.small-bloc:hover .marge{
+    margin-right: 50px;
+    transition: 0.8s;
 }
 .marge1{
     margin:1px 0 ;
     font-size: 15px;
     font: message-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
+.irond{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: rotate(180deg);
+    transition: 0.8s;
+    font-size: 25px;
+}
+.small-bloc:hover .irond{
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+
 .btn1{
     cursor: pointer;
     padding: 11px 19px;
