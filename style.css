@@ -192,7 +192,7 @@ a{
     right: 25px;
     opacity: 1;
     color: black;
-    transition: 0.3;
+    transition: 0.3s;
 
 }
 
@@ -365,7 +365,7 @@ a{
     background-color: white;
     position: relative;
     overflow: hidden;
-    transition: droite 1s ease-in-out;
+    transition:1s ease-in-out;
     margin: 10px 1px 12px 14px;
     animation: apparai 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
@@ -466,7 +466,7 @@ a{
 }
 .btn1:hover{
     transform: scale(0.95);
-    transition: .1;
+    transition: .1s;
 }
 .commande{
     display: flex;
