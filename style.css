@@ -146,11 +146,15 @@ a{
     text-decoration: none;
     color: white;
     font-size: 18px;
+    
 }
 .lien{
     display: flex;
     flex-direction: column;
     font-size: 15px;
+}
+.lien a{
+    margin-bottom: 5px;
 }
 .i-end{
     margin-right: 18px;
@@ -253,6 +257,20 @@ a{
         50% { opacity: 0;}
         100% {opacity: 1; }
 }
+.box-anime{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: font 4s ease-in-out;
+}
+@keyframes font{
+    0%{position: fixed; opacity: 1; z-index: 1;}
+    100%{position: fixed; opacity: 0; z-index: 1;}
+}
+
 /*#99E2D0*/
 .anime{
     position: absolute;
@@ -269,7 +287,7 @@ a{
     animation: spin 4s linear ;
     opacity: 0;
     z-index: 2;
-    background-color: transparent;
+    background-color: white;
 }
 @keyframes spin{
     0%{ transform: rotate(0deg); opacity: 1;}
@@ -286,6 +304,7 @@ a{
     height:60px;
     opacity: 0;
     animation: tourne 4s linear ;
+    background: white;
 }
 @keyframes tourne {
     0%{  opacity: 1;}
