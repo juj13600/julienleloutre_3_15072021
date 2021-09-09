@@ -59,13 +59,17 @@ h1{
     text-decoration: none;
     border: 0;
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    font-size: 18px; 
+    font-size: 18px;
+    box-shadow: 3px 3px 20px grey; 
     transform: scale(1);
     transition-property: transform;
     transition-duration: .4s;   
 }
 .btn:hover{
     transform: scale(0.95);
+    transition: .5s;
+    background-image: linear-gradient(to bottom right, #f88cd9, #a673e6);
+    box-shadow: 4px 5px 11px grey;
 }
 .fonctionnement{
     font-size: 18px;
@@ -480,12 +484,15 @@ a{
     border: 0;
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     font-size: 18px;
+    box-shadow: 3px 3px 20px grey;
     transition-property: transform;
     transition-duration: .3s;   
 }
 .btn1:hover{
     transform: scale(0.95);
-    transition: .1s;
+    transition: .5s;
+    background-image: linear-gradient(to bottom right,  #b68fe5, #db96c8);
+    box-shadow: 4px 5px 11px grey;
 }
 .commande{
     display: flex;
