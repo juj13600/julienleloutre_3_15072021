@@ -68,7 +68,7 @@ h1{
 .btn:hover{
     transform: scale(0.95);
     transition: .5s;
-    background-image: linear-gradient(to bottom right, #f16ecc, #a673e6);
+    background-image: linear-gradient(to bottom right, #ff94e1, #a673e6);
     box-shadow: 4px 5px 11px grey;
 }
 .fonctionnement{
